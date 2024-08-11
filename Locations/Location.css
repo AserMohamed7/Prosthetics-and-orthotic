@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .contact_us_6 * {
-    font-family: Nunito, sans-serif;
+    font-family:"Titillium Web", sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
 }
 
 .contact_us_6 .text-blk {
@@ -55,7 +60,7 @@
     width: 35%;
     padding-bottom: 10px;
     padding-left: 30px;
-    background-color: #03a9f4;
+    background-color: #032b5c;
     position: absolute;
     height: 950px;
     right: 0px;
@@ -180,7 +185,7 @@
 
 .contact_us_6 .submit-btn {
     width: 98%;
-    background-color: #03a9f4;
+    background-color: #032b5c;
     height: 60px;
     font-size: 20px;
     font-weight: 700;
@@ -208,6 +213,35 @@
     border-bottom-left-radius: 40px;
 }
 
+.contact_us_6 .submit-btn:hover {
+    width: 98%;
+    background-color: #1e4e8a;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: outset;
+    border-right-style: outset;
+    border-bottom-style: outset;
+    border-left-style: outset;
+    border-top-color: #767676;
+    border-right-color: #767676;
+    border-bottom-color: #767676;
+    border-left-color: #767676;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
 .contact_us_6 .form-box {
     z-index: 2;
     margin-top: 0px;
@@ -279,7 +313,7 @@
     margin-right: 0px;
     margin-bottom: 10px;
     margin-left: 0px;
-    color: #03a9f4;
+    color: #032b5c;
 }
 
 .contact_us_6 .text-blk.map-contactus-subhead {
@@ -363,7 +397,7 @@
     }
 
     .contact_us_6 .form-box {
-        margin-top: 200px;
+        margin-top: 2px;
         margin-right: 60px;
         margin-bottom: 40px;
         margin-left: 0px;
@@ -467,7 +501,7 @@
     }
 
     .contact_us_6 .form-box {
-        margin-top: 200px;
+        margin-top: 3px;
         margin-right: 0px;
         margin-bottom: 0px;
         margin-left: 0px;
@@ -488,7 +522,7 @@
     }
 
     .contact_us_6 .form-box {
-        margin-top: 220px;
+        margin-top: 3px;
         margin-right: 0px;
         margin-bottom: 50px;
         margin-left: 0px;

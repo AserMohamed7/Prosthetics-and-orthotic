@@ -6,46 +6,38 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-<!--    <link rel="stylesheet" href="./home.scss">-->
     <link rel="stylesheet" href="home.css">
 
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-<!--                //NavBAr        -->
-<!--<nav class="navbar navbar-expand-sm navbar-dark back">-->
-<!--    <div class="container-fluid">-->
-<!--        <a class="navbar-brand" href="javascript:void(0)"><img src="" alt="Logo"> </a>-->
+<!-- NavBar -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../Home/home.html">Logo</a>
+    </div>
+    <div class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="../Home/home.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+        <li><a href="../Services/service.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+        <li><a href="../MeetOurTeam/team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+        <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+        <li><a href="../AboutUS/about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+        <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+        <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+        <li class="language-switcher">
+            <button id="en-button" class="lang-button" data-lang="en">English</button>
+            <button id="ar-button" class="lang-button" data-lang="ar">عربي</button>
+        </li>
+    </ul>
+</nav>
 
-<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">-->
-<!--            <span class="navbar-toggler-icon"></span>-->
-<!--        </button>-->
-<!--        <div class="collapse navbar-collapse" id="mynavbar">-->
-<!--            <ul class="navbar-nav me-auto cnterr">-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link mr" href="javascript:void(0)">Services</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item mr">-->
-<!--                    <a class="nav-link" href="javascript:void(0)">Contact Us</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item mr">-->
-<!--                    <a class="nav-link" href="javascript:void(0)">About Us</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item mr">-->
-<!--                    <a class="nav-link" href="javascript:void(0)">Our Team</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item mr">-->
-<!--                    <a class="nav-link" href="javascript:void(0)">Testimonials</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-
-<!--        </div>-->
-<!--        </div>-->
-<!--</nav>-->
-<!--                //End Nav Bar      -->
+<!-- Carousel and Content -->
 <div class="carousel">
     <div class="progress-bar progress-bar--primary hide-on-desktop">
         <div class="progress-bar__fill"></div>
@@ -59,12 +51,12 @@
                 </div>
                 <div class="main-post__content">
                     <div class="main-post__tag-wrapper">
-                        <span class="main-post__tag">Custom Care</span>
+                        <span class="main-post__tag" data-en="Custom Care" data-ar="رعاية مخصصة">Custom Care</span>
                     </div>
-                    <h1 class="main-post__title">Custom Care For Better Life That You Deserve...</h1>
-                    <h1 class="main-post__title">Ready?</h1>
+                    <h1 class="main-post__title" data-en="Custom Care For Better Life That You Deserve..." data-ar="رعاية مخصصة لحياة أفضل تستحقها...">Custom Care For Better Life That You Deserve...</h1>
+                    <h1 class="main-post__title" data-en="Ready?" data-ar="مستعد؟">Ready?</h1>
                     <a class="main-post__link" href="#">
-                        <span class="main-post__link-text">Call Us Now</span>
+                        <span class="main-post__link-text" data-en="Call Us Now" data-ar="اتصل بنا الآن">Call Us Now</span>
                         <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white" />
                         </svg>
@@ -77,15 +69,15 @@
                 </div>
                 <div class="main-post__content">
                     <div class="main-post__tag-wrapper">
-                        <span class="main-post__tag">Prosthetics</span>
+                        <span class="main-post__tag" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</span>
                     </div>
-                    <h1 class="main-post__title">Upper and Lower limb prosthetics with precision and care</h1>
+                    <h1 class="main-post__title" data-en="Upper and Lower limb prosthetics with precision and care" data-ar="أطراف صناعية للذراعين والساقين بدقة واهتمام">Upper and Lower limb prosthetics with precision and care</h1>
                     <a class="main-post__link" href="#">
                         <svg class="main-post__link-icon main-post__link-icon--play-btn" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="10" cy="10" r="9" stroke="#C20000" stroke-width="2" />
                             <path d="M14 10L8 6V14L14 10Z" fill="white" />
                         </svg>
-                        <span class="main-post__link-text">contact us</span>
+                        <span class="main-post__link-text" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
                     </a>
                 </div>
             </article>
@@ -95,11 +87,11 @@
                 </div>
                 <div class="main-post__content">
                     <div class="main-post__tag-wrapper">
-                        <span class="main-post__tag">Orthotics</span>
+                        <span class="main-post__tag" data-en="Orthotics" data-ar="أجهزة التقويم">Orthotics</span>
                     </div>
-                    <h1 class="main-post__title">Unparalleled custom orthotic devices for both upper and lower limbs, crafted with exacting precision</h1>
+                    <h1 class="main-post__title" data-en="Unparalleled custom orthotic devices for both upper and lower limbs, crafted with exacting precision" data-ar="أجهزة تقويم مخصصة لا مثيل لها للذراعين والساقين، مصنوعة بدقة متناهية">Unparalleled custom orthotic devices for both upper and lower limbs, crafted with exacting precision</h1>
                     <a class="main-post__link" href="#">
-                        <span class="main-post__link-text">find out more</span>
+                        <span class="main-post__link-text" data-en="Find Out More" data-ar="اعرف المزيد">Find Out More</span>
                         <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="white" />
                         </svg>
@@ -115,158 +107,170 @@
                 <div class="progress-bar__fill"></div>
             </div>
             <header class="post__header">
-                <span class="post__tag">Custom Care</span>
-                <p class="post__published">For Life You Deserve</p>
+                <span class="post__tag" data-en="Custom Care" data-ar="رعاية مخصصة">Custom Care</span>
+                <p class="post__published" data-en="For Life You Deserve" data-ar="لحياة تستحقها">For Life You Deserve</p>
             </header>
-            <h2 class="post__title">we stand at the forefront of transformative care with very good experiences</h2>
+            <h2 class="post__title" data-en="We stand at the forefront of transformative care with very good experiences" data-ar="نحن في طليعة الرعاية التحويلية مع تجارب ممتازة">We stand at the forefront of transformative care with very good experiences</h2>
         </article>
         <article class="post">
             <div class="progress-bar">
                 <div class="progress-bar__fill"></div>
             </div>
             <header class="post__header">
-                <span class="post__tag">Prosthetics</span>
-                <p class="post__published">Customized Prosthetics</p>
+                <span class="post__tag" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</span>
+                <p class="post__published" data-en="Customized Prosthetics" data-ar="أطراف صناعية مخصصة">Customized Prosthetics</p>
             </header>
-            <h2 class="post__title">We create bespoke upper and lower limb prosthetics with precision and care</h2>
+            <h2 class="post__title" data-en="We create bespoke upper and lower limb prosthetics with precision and care" data-ar="نحن نصنع أطرافًا صناعية مخصصة للذراعين والساقين بدقة واهتمام">We create bespoke upper and lower limb prosthetics with precision and care</h2>
         </article>
         <article class="post">
             <div class="progress-bar">
                 <div class="progress-bar__fill"></div>
             </div>
             <header class="post__header">
-                <span class="post__tag">Orthotics</span>
-                <p class="post__published">Customized Orthotics</p>
+                <span class="post__tag" data-en="Orthotics" data-ar="أجهزة التقويم">Orthotics</span>
+                <p class="post__published" data-en="Customized Orthotics" data-ar="أجهزة تقويم مخصصة">Customized Orthotics</p>
             </header>
-            <h2 class="post__title">At our clinic, we deliver unparalleled custom orthotic devices for both upper and lower limbs, crafted with exacting precision</h2>
+            <h2 class="post__title" data-en="At our clinic, we deliver unparalleled custom orthotic devices for both upper and lower limbs, crafted with exacting precision" data-ar="في عيادتنا، نقدم أجهزة تقويم مخصصة لا مثيل لها للذراعين والساقين، مصنوعة بدقة متناهية">At our clinic, we deliver unparalleled custom orthotic devices for both upper and lower limbs, crafted with exacting precision</h2>
         </article>
     </div>
 </div>
 
 <div class="Intro">
-
     <div class="photo">
         <img src="../Images/Home/athletic-man-with-prosthetic-leg-runs-outdoors-exercise-sports-concept.jpg">
     </div>
-
     <div class="text_container">
         <div class="txt">
-            <h2>Introduction</h2>
+            <h2 data-en="Introduction" data-ar="مقدمة">Introduction</h2>
         </div>
         <div class="para">
-            <p>"With a legacy spanning two decades, we stand at the forefront of transformative care. From shaping solutions for unique deformities to empowering amputees and nurturing the dreams of children, every step we take is a testament to our commitment to excellence. Discover how our dedication to quality and innovation makes us the trusted choice in prosthetics and orthotics."</p>
+            <p data-en="With a legacy spanning two decades, we stand at the forefront of transformative care. From shaping solutions for unique deformities to empowering amputees and nurturing the dreams of children, every step we take is a testament to our commitment to excellence. Discover how our dedication to quality and innovation makes us the trusted choice in prosthetics and orthotics." data-ar="بفضل إرث يمتد على مدى عقدين من الزمان، نحن في طليعة الرعاية التحويلية. من تشكيل الحلول للتشوهات الفريدة إلى تمكين الأطراف الصناعية وتحقيق أحلام الأطفال، كل خطوة نخطوها هي شهادة على التزامنا بالتميز. اكتشف كيف تجعلنا تفانينا في الجودة والابتكار الخيار الموثوق في الأطراف الصناعية وأجهزة التقويم.">With a legacy spanning two decades, we stand at the forefront of transformative care. From shaping solutions for unique deformities to empowering amputees and nurturing the dreams of children, every step we take is a testament to our commitment to excellence. Discover how our dedication to quality and innovation makes us the trusted choice in prosthetics and orthotics.</p>
         </div>
     </div>
-
 </div>
 
-
 <div class="button-container">
-    <button class="button-57" role="button"><span class="text">Prosthetics</span><span>Know more</span></button>
-    <button class="button-57" role="button"><span class="text">Orthotics</span><span>Know more</span></button>
+    <a href="../Services/prosthetics/index.html">
+        <button class="button-57" role="button">
+            <span class="text" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</span>
+            <span data-en="Know More" data-ar="اعرف المزيد">Know More</span>
+        </button>
+    </a>
+    <a href="../Services/orthotic/index.html">
+        <button class="button-57" role="button">
+            <span class="text" data-en="Orthotics" data-ar="أجهزة التقويم">Orthotics</span>
+            <span data-en="Know More" data-ar="اعرف المزيد">Know More</span>
+        </button>
+    </a>
 </div>
 
 <div class="certificates">
     <div class="text_container2">
-        <p>
-            We proudly hold ISPO certifications for our pioneering case studies, highlighting our team's expertise and commitment to advancing prosthetics and orthotics. Our continuous learning and innovation ensure we unlock your full potential.
-        </p>
+        <h2 data-en="Certifications and Expertise" data-ar="الشهادات والخبرة">Certifications and Expertise</h2>
+        <p data-en="We proudly hold ISPO certifications for our pioneering case studies, highlighting our team's expertise and commitment to advancing prosthetics and orthotics. Our continuous learning and innovation ensure we unlock your full potential." data-ar="نفخر بحصولنا على شهادات ISPO لدراساتنا الرائدة، مما يبرز خبرة فريقنا والتزامنا بتطوير الأطراف الصناعية وأجهزة التقويم. تضمن تعلمنا المستمر وابتكارنا فتح إمكانياتك الكاملة.">We proudly hold ISPO certifications for our pioneering case studies, highlighting our team's expertise and commitment to advancing prosthetics and orthotics. Our continuous learning and innovation ensure we unlock your full potential.</p>
+        <div class="box">
+            <a class="button" href="#popup1" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2 data-en="Ready?" data-ar="هل أنت مستعد؟">Ready?</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content" data-en="Ready to experience personalized prosthetic and orthotic care? Contact us today to schedule a free assessment and consultation. Let our expert team guide you towards reclaiming your mobility and confidence." data-ar="هل أنت مستعد لتجربة الرعاية الشخصية للأطراف الصناعية وأجهزة التقويم؟ اتصل بنا اليوم لتحديد موعد تقييم واستشارة مجانية. دع فريقنا الخبير يوجهك لاستعادة حركتك وثقتك.">
+                    Ready to experience personalized prosthetic and orthotic care? Contact us today to schedule a free assessment and consultation. Let our expert team guide you towards reclaiming your mobility and confidence.
+                    <a href="../ContactUS/contactus.html">Contact Us</a>
+                    <svg class="main-post__link-icon main-post__link-icon--arrow" width="37" height="12" viewBox="0 0 37 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11" stroke="blue" />
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-
-
-
-
-<!--                        // Footer Here //                                       -->
+<!-- Footer -->
 <footer class="footer">
-    <div class="footer__addr">
-        <h1 class="footer__logo">Something</h1>
-
-        <h2>Contact</h2>
-
-        <address>
-            5534 Somewhere In. The World 22193-10212<br>
-
-            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-        </address>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4 data-en="Pages" data-ar="الصفحات">Pages</h4>
+                <ul>
+                    <li><a href="../Services/index.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+                    <li><a href="../MeetOurTeam/index.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+                    <li><a href="../AboutUS/index.html" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+                    <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+                    <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Detailed Services" data-ar="الخدمات المفصلة">Detailed Services</h4>
+                <ul>
+                    <li><a href="../Services/index.html" data-en="All Services" data-ar="جميع الخدمات">All Services</a></li>
+                    <li><a href="../Services/prosthetics/index.html" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</a></li>
+                    <li><a href="../Services/orthotic/index.html" data-en="Orthotics" data-ar="الأجهزة التقويمية">Orthotics</a></li>
+                    <li><a href="#" data-en="Follow-up Care" data-ar="رعاية المتابعة">Follow-up Care</a></li>
+                    <li><a href="#" data-en="Consultation and Fitting" data-ar="الاستشارة والقياس">Consultation and Fitting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Online Shop" data-ar="المتجر الإلكتروني">Online Shop</h4>
+                <ul>
+                    <li><a href="#" data-en="Watch" data-ar="ساعة">Watch</a></li>
+                    <li><a href="#" data-en="Bag" data-ar="حقيبة">Bag</a></li>
+                    <li><a href="#" data-en="Shoes" data-ar="أحذية">Shoes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@customcare.com" data-en="info@customcare.com" data-ar="info@customcare.com">info@customcare.com</a></li>
+                    <li><a href="tel:+1234567890" data-en="+123 456 7890" data-ar="+123 456 7890">+123 456 7890</a></li>
+                    <li><a href="#" data-en="123 Main Street, Cairo, Egypt" data-ar="123 الشارع الرئيسي، القاهرة، مصر">123 Main Street, Cairo, Egypt</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <ul class="footer__nav">
-        <li class="nav__item">
-            <h2 class="nav__title">Media</h2>
-
-            <ul class="nav__ul">
-                <li>
-                    <a href="#">Online</a>
-                </li>
-
-                <li>
-                    <a href="#">Print</a>
-                </li>
-
-                <li>
-                    <a href="#">Alternative Ads</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="nav__item nav__item--extra">
-            <h2 class="nav__title">Technology</h2>
-
-            <ul class="nav__ul nav__ul--extra">
-                <li>
-                    <a href="#">Hardware Design</a>
-                </li>
-
-                <li>
-                    <a href="#">Software Design</a>
-                </li>
-
-                <li>
-                    <a href="#">Digital Signage</a>
-                </li>
-
-                <li>
-                    <a href="#">Automation</a>
-                </li>
-
-                <li>
-                    <a href="#">Artificial Intelligence</a>
-                </li>
-
-                <li>
-                    <a href="#">IoT</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="nav__item">
-            <h2 class="nav__title">Legal</h2>
-
-            <ul class="nav__ul">
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-
-                <li>
-                    <a href="#">Terms of Use</a>
-                </li>
-
-                <li>
-                    <a href="#">Sitemap</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <div class="legal">
-        <p>&copy; 2019 Something. All rights reserved.</p>
-
+    <div class="line"></div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrightsF">
+        <p data-en="&#169; All Rights Reserved to Custom Care For A Life You Deserve" data-ar="&#169; جميع الحقوق محفوظة لـ Custom Care لحياة تستحقها">© All Rights Reserved to Custom Care For A Life You Deserve</p>
     </div>
 </footer>
 
-
 <script src="./home.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const langButtons = document.querySelectorAll('#en-button, #ar-button');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const lang = button.id === 'en-button' ? 'en' : 'ar';
+                changeLanguage(lang);
+            });
+        });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) {
+                    element.textContent = text;
+                }
+            });
+        }
+    });
+</script>
+<script src="../Services/service.js"></script>
 </body>
 </html>

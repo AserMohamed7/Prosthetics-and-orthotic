@@ -5,52 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
     <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="../Home/home.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <div class="language-switcher">
-        <button id="en-button">English</button>
-        <button id="ar-button">عربي</button>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../Home/home.html">Logo</a>
     </div>
+    <div class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="../Home/home.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+        <li><a href="../Services/service.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+        <li><a href="../MeetOurTeam/team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+        <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+        <li><a href="../AboutUS/about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+        <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+        <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+        <li class="language-switcher">
+            <button id="en-button" class="lang-button" data-lang="en">English</button>
+            <button id="ar-button" class="lang-button" data-lang="ar">عربي</button>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1 data-en="Our Services" data-ar="خدماتنا">Our Services</h1>
+    <section class="service-section">
+        <div class="service">
+            <img src="https://mindmatters.ai/wp-content/uploads/sites/2/2020/03/Prosthetic-hand-Adobe-Stock-283477983.jpeg" alt="Service 1 Image">
+            <div class="service-content">
+                <h2 data-en="Custom Prosthetics" data-ar="أطراف صناعية مخصصة">Custom Prosthetics</h2>
+                <p data-en="Our custom prosthetics are designed to meet each individual's unique needs, providing optimal comfort and functionality. With advanced technology and materials, we ensure the highest quality and performance." data-ar="تُصمم أطرافنا الصناعية المخصصة لتلبية احتياجات كل فرد بشكل فريد، مما يوفر أقصى درجات الراحة والوظائف. باستخدام التكنولوجيا والمواد المتقدمة، نضمن أعلى جودة وأداء.">Our custom prosthetics are designed to meet each individual's unique needs, providing optimal comfort and functionality. With advanced technology and materials, we ensure the highest quality and performance.</p>
+                <a href="./prosthetics/prosthetics.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="https://evolveprosthetics.com/wp-content/uploads/breg-knee-braces.jpg" alt="Service 2 Image">
+            <div class="service-content">
+                <h2 data-en="Custom Orthotic" data-ar="أجهزة تقويم مخصصة">Custom Orthotic</h2>
+                <p data-en="We offer a range of orthotic solutions to support and enhance mobility. Our products are tailored to provide the best fit and comfortable, helping you to live an very active happy and pain-free life." data-ar="نقدم مجموعة من الحلول التقويمية لدعم وتعزيز الحركة. تُصمم منتجاتنا لتوفير أفضل ملاءمة وراحة، مما يساعدك على العيش بشكل نشط وخالٍ من الألم.">We offer a range of orthotic solutions to support and enhance mobility. Our products are tailored to provide the best fit and comfort, helping you live an active and pain-free life.</p>
+                <a href="./orthotic/orthotic.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="https://icr-evolution.com/wp-content/uploads/2019/07/pexels-yan-krukov-8867432-scaled-e1631183213454.jpg" alt="Service 3 Image">
+            <div class="service-content">
+                <h2 data-en="Follow-up Care" data-ar="رعاية متابعة">Follow-up Care</h2>
+                <p data-en="Follow-up care is integral to our commitment to your well-being. Our dedicated team is always available to address any concerns, make necessary refinements, and ensure that you receive the highest level of comfort and care throughout your journey." data-ar="تعد رعاية المتابعة جزءًا أساسيًا من التزامنا برعايتك. فريقنا المتفاني متاح دائمًا لمعالجة أي قلق، وإجراء التعديلات اللازمة، وضمان حصولك على أعلى مستوى من الراحة والرعاية طوال رحلتك.">Follow-up care is integral to our commitment to your well-being. Our dedicated team is always available to address any concerns, make necessary refinements, and ensure that you receive the highest level of comfort and care throughout your journey.</p>
+                <a href="service3.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="https://bswh-p-001-delivery.sitecorecontenthub.cloud/api/public/content/63f1b6fbff52492282a8e31c37a65806?v=52d8545a" alt="Service 4 Image">
+            <div class="service-content">
+                <h2 data-en="Consultation and Fitting" data-ar="استشارة وتلائم">Consultation and Fitting</h2>
+                <p data-en="We provide expert consultation and fitting services to ensure the perfect match for your needs. Our professionals guide you through the process, ensuring a personalized and very comfortable experience." data-ar=" لنقدم استشارات وخدمات تلائم الخبراء لضمان تطابق مثالي لاحتياجاتك. يرشدك متخصصونا خلال العملية، مما يضمن تجربة رائعه مخصصة ومريحة لك">We provide expert consultation and fitting services to ensure the perfect match for your needs. Our professionals guide you through the process, ensuring a personalized and very comfortable experience.</p>
+                <a href="service4.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
     <div class="container">
-        <h1 data-en="Our Services" data-ar="خدماتنا">Our Services</h1>
-        <section class="service-section">
-            <div class="service">
-                <img src="https://mindmatters.ai/wp-content/uploads/sites/2/2020/03/Prosthetic-hand-Adobe-Stock-283477983.jpeg" alt="Service 1 Image">
-                <div class="service-content">
-                    <h2 data-en="Custom Prosthetics" data-ar="أطراف صناعية مخصصة">Custom Prosthetics</h2>
-                    <p data-en="Our custom prosthetics are designed to meet each individual's unique needs, providing optimal comfort and functionality. With advanced technology and materials, we ensure the highest quality and performance." data-ar="تُصمم أطرافنا الصناعية المخصصة لتلبية احتياجات كل فرد بشكل فريد، مما يوفر أقصى درجات الراحة والوظائف. باستخدام التكنولوجيا والمواد المتقدمة، نضمن أعلى جودة وأداء.">Our custom prosthetics are designed to meet each individual's unique needs, providing optimal comfort and functionality. With advanced technology and materials, we ensure the highest quality and performance.</p>
-                    <a href="./prosthetics/prosthetics.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
-                </div>
+        <div class="row">
+            <div class="footer-col">
+                <h4 data-en="Pages" data-ar="الصفحات">Pages</h4>
+                <ul>
+                    <li><a href="../Services/index.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+                    <li><a href="../MeetOurTeam/index.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+                    <li><a href="../AboutUS/index.html" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+                    <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+                    <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+                </ul>
             </div>
-
-            <div class="service">
-                <img src="https://evolveprosthetics.com/wp-content/uploads/breg-knee-braces.jpg" alt="Service 2 Image">
-                <div class="service-content">
-                    <h2 data-en="Custom Orthotic" data-ar="أجهزة تقويم مخصصة">Custom Orthotic</h2>
-                    <p data-en="We offer a range of orthotic solutions to support and enhance mobility. Our products are tailored to provide the best fit and comfort, helping you live an active and pain-free life." data-ar="نقدم مجموعة من الحلول التقويمية لدعم وتعزيز الحركة. تُصمم منتجاتنا لتوفير أفضل ملاءمة وراحة، مما يساعدك على العيش بشكل نشط وخالٍ من الألم.">We offer a range of orthotic solutions to support and enhance mobility. Our products are tailored to provide the best fit and comfort, helping you live an active and pain-free life.</p>
-                    <a href="./orthotic/orthotic.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
-                </div>
+            <div class="footer-col">
+                <h4 data-en="Detailed Services" data-ar="الخدمات المفصلة">Detailed Services</h4>
+                <ul>
+                    <li><a href="../Services/index.html" data-en="All Services" data-ar="جميع الخدمات">All Services</a></li>
+                    <li><a href="../Services/prosthetics/index.html" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</a></li>
+                    <li><a href="../Services/orthotic/index.html" data-en="Orthotics" data-ar="الأجهزة التقويمية">Orthotics</a></li>
+                    <li><a href="#" data-en="Follow-up Care" data-ar="رعاية المتابعة">Follow-up Care</a></li>
+                    <li><a href="#" data-en="Consultation and Fitting" data-ar="الاستشارة والقياس">Consultation and Fitting</a></li>
+                </ul>
             </div>
-
-            <div class="service">
-                <img src="https://icr-evolution.com/wp-content/uploads/2019/07/pexels-yan-krukov-8867432-scaled-e1631183213454.jpg" alt="Service 3 Image">
-                <div class="service-content">
-                    <h2 data-en="Follow-up Care" data-ar="رعاية متابعة">Follow-up Care</h2>
-                    <p data-en="Follow-up care is integral to our commitment to your well-being. Our dedicated team is always available to address any concerns, make necessary refinements, and ensure that you receive the highest level of comfort and care throughout your journey." data-ar="تعد رعاية المتابعة جزءًا أساسيًا من التزامنا برعايتك. فريقنا المتفاني متاح دائمًا لمعالجة أي قلق، وإجراء التعديلات اللازمة، وضمان حصولك على أعلى مستوى من الراحة والرعاية طوال رحلتك.">Follow-up care is integral to our commitment to your well-being. Our dedicated team is always available to address any concerns, make necessary refinements, and ensure that you receive the highest level of comfort and care throughout your journey.</p>
-                    <a href="service3.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
-                </div>
+            <div class="footer-col">
+                <h4 data-en="Online Shop" data-ar="المتجر الإلكتروني">Online Shop</h4>
+                <ul>
+                    <li><a href="#" data-en="Watch" data-ar="ساعة">Watch</a></li>
+                    <li><a href="#" data-en="Bag" data-ar="حقيبة">Bag</a></li>
+                    <li><a href="#" data-en="Shoes" data-ar="أحذية">Shoes</a></li>
+                </ul>
             </div>
-
-            <div class="service">
-                <img src="https://bswh-p-001-delivery.sitecorecontenthub.cloud/api/public/content/63f1b6fbff52492282a8e31c37a65806?v=52d8545a" alt="Service 4 Image">
-                <div class="service-content">
-                    <h2 data-en="Consultation and Fitting" data-ar="استشارة وتلائم">Consultation and Fitting</h2>
-                    <p data-en="We provide expert consultation and fitting services to ensure the perfect match for your needs. Our professionals guide you through the process, ensuring a personalized and comfortable experience." data-ar="نقدم استشارات وخدمات تلائم الخبراء لضمان تطابق مثالي لاحتياجاتك. يرشدك متخصصونا خلال العملية، مما يضمن تجربة مخصصة ومريحة.">We provide expert consultation and fitting services to ensure the perfect match for your needs. Our professionals guide you through the process, ensuring a personalized and comfortable experience.</p>
-                    <a href="service4.html" class="learn-more" data-en="Learn More" data-ar="أعرف المزيد">Learn More</a>
-                </div>
+            <div class="footer-col">
+                <h4 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@customcare.com" data-en="info@customcare.com" data-ar="info@customcare.com">info@customcare.com</a></li>
+                    <li><a href="tel:+1234567890" data-en="+123 456 7890" data-ar="+123 456 7890">+123 456 7890</a></li>
+                    <li><a href="#" data-en="123 Main Street, Cairo, Egypt" data-ar="123 الشارع الرئيسي، القاهرة، مصر">123 Main Street, Cairo, Egypt</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
     </div>
-    <script src="service.js"></script>
+    <div class="line"></div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrightsF">
+        <p data-en="&#169; All Rights Reserved to Custom Care For A Life You Deserve" data-ar="&#169; جميع الحقوق محفوظة لـ Custom Care لحياة تستحقها">© All Rights Reserved to Custom Care For A Life You Deserve</p>
+    </div>
+</footer>
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+
+        // Show/Hide Navbar on Scroll
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = "-80px";
+            } else {
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+        <script src="service.js"></script>
+
+
 </body>
 </html>

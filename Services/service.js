@@ -1,21 +1,20 @@
+// language-switcher.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const enButton = document.getElementById('en-button');
     const arButton = document.getElementById('ar-button');
     
     function setLanguage(lang) {
-        document.body.setAttribute('lang', lang);
-        
-        document.querySelectorAll('[data-en]').forEach(element => {
-            const text = element.getAttribute(`data-${lang}`);
-            if (text) {
-                element.textContent = text;
-            }
+        localStorage.setItem('language', lang);
+        document.querySelectorAll('[data-en]').forEach(el => {
+            el.textContent = el.getAttribute(`data-${lang}`);
         });
     }
     
     enButton.addEventListener('click', () => setLanguage('en'));
     arButton.addEventListener('click', () => setLanguage('ar'));
     
-    // Set the default language
-    setLanguage('en');
+    // Set the language based on localStorage or default to English
+    const savedLang = localStorage.getItem('language') || 'en';
+    setLanguage(savedLang);
 });
