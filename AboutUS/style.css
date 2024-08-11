@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0056b3;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+section {
+    background-color: #e9f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    background-color: #d0eaff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+img[alt="Orthotics Image"] {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.section-content img {
+    max-width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-content p,
+.section-content ul {
+    flex: 1;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.section-content p:hover,
+.section-content ul:hover {
+    color: #0056b3;
+}
+
+section.mission,
+section.vision {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+section.mission .section-content,
+section.vision .section-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.mission .section-content p,
+section.vision .section-content p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.values-section {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+}
+
+.values-section h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 25px;
+}
+
+.values-section .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.values-section img {
+    max-width: 50%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.values-section img:hover {
+    transform: scale(1.05);
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.values-section ul li {
+    background-color: #e0f7ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-left: 45px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.values-section ul li:before {
+    content: "\2714";
+    color: #0080ff;
+    font-size: 18px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.values-section ul li:hover {
+    background-color: #cceeff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-content img {
+        max-width: 100%;
+    }
+
+    .section-content p,
+    .section-content ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p, ul {
+        font-size: 16px;
+    }
+}

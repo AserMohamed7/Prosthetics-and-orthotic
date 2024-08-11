@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>locations</title>
+    <link rel="stylesheet" href="./Location.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../ContactUS/styles/all.css">
+    <link rel="stylesheet" href="../ContactUS/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../ContactUS/styles/contactus.css">
+    <link rel="stylesheet" href="../ContactUS/styles/animate.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="contact_us_6">
+    <div class="responsive-container-block container">
+        <form class="form-box">
+            <div class="container-block form-wrapper">
+                <div class="mob-text">
+                    <p class="text-blk contactus-head">
+                        Get in Touch with us
+                    </p>
+                    <p class="text-blk contactus-subhead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                    </p>
+                </div>
+                <div class="responsive-container-block" id="i2cbk">
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-3">
+                        <p class="text-blk input-title">
+                            Maadi branch
+                        </p>
+                        <p >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                        </p>
+                        <button class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">
+                            view in map
+                        </button>
+                    </div>
+
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-4">
+                        <p class="text-blk input-title">
+                            Imbaba branch
+                        </p>
+                        <p >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                        </p>
+                        <button class="submit-btn" id="w-c-s-bgc_p-1-dm-id-3">
+                            view in map
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
+            <div class="map-part">
+                <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
+                    Reach us at
+                </p>
+                <p class="text-blk map-contactus-subhead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                </p>
+                <div class="social-media-links mob">
+                    <a class="social-icon-link" href="#" id="ix94i-2-2">
+                        <img class="link-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+                    </a>
+                    <a class="social-icon-link" href="#" id="itixd">
+                        <img class="link-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+                    </a>
+                    <a class="social-icon-link" href="#" id="izxvt">
+                        <img class="link-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+                    </a>
+                    <a class="social-icon-link" href="#" id="izldf-2-2">
+                        <img class="link-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+                    </a>
+                </div>
+                <div class="Map-Box" id="map" style="height: 400px; width: 100%;">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--                //Footer        -->
+
+<!--                        // Footer Here //                                       -->
+<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Address</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Services</h5>
+                <a class="btn btn-link" href="">Our Doctors</a>
+                <a class="btn btn-link" href="">Our Shop</a>
+                <a class="btn btn-link" href="">Our Blogs</a>
+                <a class="btn btn-link" href="">Our Trainers</a>
+                <a class="btn btn-link" href="">Laboratory</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Quick Links</h5>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="{{ url('/contact') }}">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Newsletter</h5>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">phsyiorevive</a>, All Right Reserved.
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--                //Footer        -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize the map and set its view to Cairo
+        var map = L.map('map').setView([30.0444, 31.2357], 12); // Coordinates for Cairo
+
+        // Add a tile layer to the map (you can customize the tile provider)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Coordinates for Maadi
+        var maadiLatLng = [29.9604, 31.2554];
+        var imbabaLatLng = [30.0668, 31.2045];
+
+        // Set an event listener on the button with id-2
+        document.getElementById('w-c-s-bgc_p-1-dm-id-2').addEventListener('click', function (e) {
+            e.preventDefault();
+            map.setView(maadiLatLng, 14); // Zoom in to Maadi
+            L.marker(maadiLatLng).addTo(map).bindPopup("Maadi, Cairo").openPopup();
+        });
+
+        document.getElementById('w-c-s-bgc_p-1-dm-id-3').addEventListener('click', function (e) {
+            e.preventDefault();
+            map.setView(imbabaLatLng, 14); // Zoom in to Maadi
+            L.marker(imbabaLatLng).addTo(map).bindPopup("Imbaba, Cairo").openPopup();
+        });
+    });
+</script>
+
+
+</body>
+</html>
