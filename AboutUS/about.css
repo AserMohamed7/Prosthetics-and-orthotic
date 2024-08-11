@@ -22,6 +22,9 @@ section {
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
+    max-width: 800px; /* Set a maximum width for the sections */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
 }
 
 section:hover {
@@ -68,11 +71,40 @@ img[alt="Orthotics Image"] {
     color: #0056b3;
 }
 
+section.company-history-section {
+    background-color: #e9f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    max-width: 800px; /* Set a maximum width for the section */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+}
+
+section.company-history-section .section-content {
+    flex-direction: row; /* Ensure the image is on the left and content is on the right */
+    text-align: left;
+}
+
+section.company-history-section .section-content img {
+    max-width: 40%; /* Increase width of image */
+    max-height: 400px; /* Set a maximum height for the image */
+    object-fit: cover; /* Ensure the image scales correctly */
+}
+
 section.mission,
 section.vision {
-    padding: 30px;
+    background-color: #e9f7ff;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    max-width: 800px; /* Set a maximum width for the section */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
 }
 
 section.mission .section-content,
@@ -83,7 +115,8 @@ section.vision .section-content {
 }
 
 section.mission .section-content p,
-section.vision .section-content p {
+section.vision .section-content p,
+section.company-history-section .section-content p {
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -153,6 +186,43 @@ section.vision .section-content p {
 .values-section ul li:hover {
     background-color: #cceeff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* For Arabic (RTL direction) */
+body[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+body[lang="ar"] .values-section ul {
+    text-align: right;
+}
+
+body[lang="ar"] .values-section ul li {
+    padding-right: 45px; /* Adjust padding to provide space for the tick on the right */
+    padding-left: 15px;  /* Reduce left padding to balance the layout */
+}
+
+body[lang="ar"] .values-section ul li:before {
+    content: "\2714";
+    color: #0080ff;
+    font-size: 18px;
+    position: absolute;
+    right: 15px; /* Move tick to the right side */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.language-switcher button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
