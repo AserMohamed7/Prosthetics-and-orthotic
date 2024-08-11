@@ -5,64 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
     <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="../Home/home.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <div class="language-switcher">
-        <button id="en-button">English</button>
-        <button id="ar-button">عربي</button>
-    </div>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../Home/home.html">Logo</a>
+        </div>
+        <div class="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="../Home/home.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+            <li><a href="../Services/service.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+            <li><a href="../MeetOurTeam/team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+            <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+            <li><a href="../AboutUS/about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+            <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+            <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+            <li class="language-switcher">
+                <button id="en-button" class="lang-button" data-lang="en">English</button>
+                <button id="ar-button" class="lang-button" data-lang="ar">عربي</button>
+            </li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <h1 data-en="Meet Our Team" data-ar="تعرف على فريقنا">Meet Our Team</h1>
+    <section class="team-section">
+        <div class="team-member">
+            <img src="https://www.shutterstock.com/image-photo/happy-mid-aged-business-man-600nw-2307212331.jpg" alt="Team Member 1">
+            <div class="team-content">
+                <h2 data-en="Zyad Samir" data-ar="زياد سمير">Zyad Samir</h2>
+                <p data-en="CEO & Founder" data-ar="المدير التنفيذي والمؤسس">CEO & Founder</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://img.freepik.com/premium-photo/attractive-smiling-young-confident-businessman-formal-wear-sitting-office-with-his-colleagues-wall-arms-folded_171337-118807.jpg" alt="Team Member 2">
+            <div class="team-content">
+                <h2 data-en="Aser Mohamed" data-ar="عاصم محمد">Aser Mohamed</h2>
+                <p data-en="Chief Operating Officer" data-ar="رئيس العمليات">Chief Operating Officer</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://img.freepik.com/premium-photo/portrait-smiling-entrepreneur-businessman-office-desk_109710-1820.jpg" alt="Team Member 3">
+            <div class="team-content">
+                <h2 data-en="Islam Yasser" data-ar="إسلام ياسر">Islam Yasser</h2>
+                <p data-en="Head of Marketing" data-ar="رئيس التسويق">Head of Marketing</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://t4.ftcdn.net/jpg/06/48/39/19/360_F_648391979_uMz6EwAlKNIJnK9r46UpTiM17nT8GuLl.jpg" alt="Team Member 4">
+            <div class="team-content">
+                <h2 data-en="Ahmed Mamdouh" data-ar="أحمد ممدوح">Ahmed Mamdouh</h2>
+                <p data-en="Lead Prosthetist" data-ar="أخصائي الأطراف الصناعية">Lead Prosthetist</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" alt="Team Member 5">
+            <div class="team-content">
+                <h2 data-en="Seka" data-ar="سيكا">Seka</h2>
+                <p data-en="Orthotist Specialist" data-ar="أخصائي أجهزة تقويم">Orthotist Specialist</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://img.freepik.com/premium-photo/boss-man-looking-camera-smiling-young-businessman-banker-with-beard-photo-with-close-up-portrait_321831-5908.jpg" alt="Team Member 6">
+            <div class="team-content">
+                <h2 data-en="Ahmed Hossam" data-ar="أحمد حسام">Ahmed Hossam</h2>
+                <p data-en="Marketing Senior" data-ar="كبير في التسويق">Marketing Senior</p>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
     <div class="container">
-        <h1 data-en="Meet Our Team" data-ar="تعرف على فريقنا">Meet Our Team</h1>
-        <section class="team-section">
-            <div class="team-member">
-                <img src="https://www.shutterstock.com/image-photo/happy-mid-aged-business-man-600nw-2307212331.jpg" alt="Team Member 1">
-                <div class="team-content">
-                    <h2 data-en="Zyad Samir" data-ar="زياد سمير">Zyad Samir</h2>
-                    <p data-en="CEO & Founder" data-ar="المدير التنفيذي والمؤسس">CEO & Founder</p>
-                </div>
+        <div class="row">
+            <div class="footer-col">
+                <h4 data-en="Pages" data-ar="الصفحات">Pages</h4>
+                <ul>
+                    <li><a href="../Services/index.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+                    <li><a href="../MeetOurTeam/index.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+                    <li><a href="../AboutUS/index.html" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+                    <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+                    <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+                </ul>
             </div>
-
-            <div class="team-member">
-                <img src="https://img.freepik.com/premium-photo/attractive-smiling-young-confident-businessman-formal-wear-sitting-office-with-his-colleagues-wall-arms-folded_171337-118807.jpg" alt="Team Member 2">
-                <div class="team-content">
-                    <h2 data-en="Aser Mohamed" data-ar="عاصم محمد">Aser Mohamed</h2>
-                    <p data-en="Chief Operating Officer" data-ar="رئيس العمليات">Chief Operating Officer</p>
-                </div>
+            <div class="footer-col">
+                <h4 data-en="Detailed Services" data-ar="الخدمات المفصلة">Detailed Services</h4>
+                <ul>
+                    <li><a href="../Services/index.html" data-en="All Services" data-ar="جميع الخدمات">All Services</a></li>
+                    <li><a href="../Services/prosthetics/index.html" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</a></li>
+                    <li><a href="../Services/orthotic/index.html" data-en="Orthotics" data-ar="الأجهزة التقويمية">Orthotics</a></li>
+                    <li><a href="#" data-en="Follow-up Care" data-ar="رعاية المتابعة">Follow-up Care</a></li>
+                    <li><a href="#" data-en="Consultation and Fitting" data-ar="الاستشارة والقياس">Consultation and Fitting</a></li>
+                </ul>
             </div>
-
-            <div class="team-member">
-                <img src="https://img.freepik.com/premium-photo/portrait-smiling-entrepreneur-businessman-office-desk_109710-1820.jpg" alt="Team Member 3">
-                <div class="team-content">
-                    <h2 data-en="Islam Yasser" data-ar="إسلام ياسر">Islam Yasser</h2>
-                    <p data-en="Head of Marketing" data-ar="رئيس التسويق">Head of Marketing</p>
-                </div>
+            <div class="footer-col">
+                <h4 data-en="Online Shop" data-ar="المتجر الإلكتروني">Online Shop</h4>
+                <ul>
+                    <li><a href="#" data-en="Watch" data-ar="ساعة">Watch</a></li>
+                    <li><a href="#" data-en="Bag" data-ar="حقيبة">Bag</a></li>
+                    <li><a href="#" data-en="Shoes" data-ar="أحذية">Shoes</a></li>
+                </ul>
             </div>
-
-            <div class="team-member">
-                <img src="https://t4.ftcdn.net/jpg/06/48/39/19/360_F_648391979_uMz6EwAlKNIJnK9r46UpTiM17nT8GuLl.jpg" alt="Team Member 4">
-                <div class="team-content">
-                    <h2 data-en="Ahmed Mamdouh" data-ar="أحمد ممدوح">Ahmed Mamdouh</h2>
-                    <p data-en="Lead Prosthetist" data-ar="أخصائي الأطراف الصناعية">Lead Prosthetist</p>
-                </div>
+            <div class="footer-col">
+                <h4 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@customcare.com" data-en="info@customcare.com" data-ar="info@customcare.com">info@customcare.com</a></li>
+                    <li><a href="tel:+1234567890" data-en="+123 456 7890" data-ar="+123 456 7890">+123 456 7890</a></li>
+                    <li><a href="#" data-en="123 Main Street, Cairo, Egypt" data-ar="123 الشارع الرئيسي، القاهرة، مصر">123 Main Street, Cairo, Egypt</a></li>
+                </ul>
             </div>
-
-            <div class="team-member">
-                <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" alt="Team Member 5">
-                <div class="team-content">
-                    <h2 data-en="Seka" data-ar="سيكا">Seka</h2>
-                    <p data-en="Orthotist Specialist" data-ar="أخصائي أجهزة تقويم">Orthotist Specialist</p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="https://img.freepik.com/premium-photo/boss-man-looking-camera-smiling-young-businessman-banker-with-beard-photo-with-close-up-portrait_321831-5908.jpg" alt="Team Member 6">
-                <div class="team-content">
-                    <h2 data-en="Ahmed Hossam" data-ar="أحمد حسام">Ahmed Hossam</h2>
-                    <p data-en="Marketing Senior" data-ar="كبير في التسويق">Marketing Senior</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
-    <script src="team.js"></script>
+    <div class="line"></div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrightsF">
+        <p data-en="&#169; All Rights Reserved to Custom Care For A Life You Deserve" data-ar="&#169; جميع الحقوق محفوظة لـ Custom Care لحياة تستحقها">© All Rights Reserved to Custom Care For A Life You Deserve</p>
+    </div>
+</footer>
+<script>
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    navbarToggle.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+    });
+
+    // Show/Hide Navbar on Scroll
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-80px";
+        } else {
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+<script src="../Services/service.js"></script>
 </body>
 </html>
