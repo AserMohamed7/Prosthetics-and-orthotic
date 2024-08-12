@@ -1,51 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const dropdownButton = document.getElementById('dropdown-button');
-    const dropdownItems = document.querySelectorAll('.dropdown-content a');
-    const langIcon = document.getElementById('lang-icon');
-    const currentLang = document.getElementById('current-lang');
+    const englishSwitch = document.getElementById('english-switch');
+    const arabicSwitch = document.getElementById('arabic-switch');
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+    const body = document.body;
 
+    // Function to set the language
     function setLanguage(lang) {
-        // Save the language preference in localStorage
         localStorage.setItem('language', lang);
 
-        // Update text content based on language, excluding the navbar
+        // Update content for all elements including the navbar
         document.querySelectorAll('[data-en]').forEach(el => {
-            if (!el.closest('.navbar')) {
-                el.textContent = el.getAttribute(`data-${lang}`);
-            }
-        });
-
-        // Update the navbar links text content based on language
-        document.querySelectorAll('.navbar a').forEach(el => {
             el.textContent = el.getAttribute(`data-${lang}`);
         });
 
-        // Update the direction and alignment based on the language
         if (lang === 'ar') {
             document.documentElement.lang = 'ar';
             document.documentElement.dir = 'rtl';
-            document.body.classList.add('rtl');
-            langIcon.textContent = '🇲🇦'; // Arabic flag
-            currentLang.textContent = 'عربي'; // Arabic text
+            body.classList.add('rtl');
         } else {
             document.documentElement.lang = 'en';
             document.documentElement.dir = 'ltr';
-            document.body.classList.remove('rtl');
-            langIcon.textContent = '🇬🇧'; // English flag
-            currentLang.textContent = 'English'; // English text
+            body.classList.remove('rtl');
         }
     }
 
-    // Add event listeners for language selection from dropdown
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default link behavior
-            const lang = item.getAttribute('data-lang');
-            setLanguage(lang);
-        });
+    // Function to change the language
+    function changeLanguage(lang) {
+        setLanguage(lang);
+    }
+
+    // Event listener for English language switch
+    englishSwitch.addEventListener('click', (event) => {
+        event.preventDefault();
+        changeLanguage('en');
     });
 
-    // Set the language based on localStorage or default to English
+    // Event listener for Arabic language switch
+    arabicSwitch.addEventListener('click', (event) => {
+        event.preventDefault();
+        changeLanguage('ar');
+    });
+
+    // Retrieve saved language preference from localStorage
     const savedLang = localStorage.getItem('language') || 'en';
     setLanguage(savedLang);
+
+    // Toggle functionality for showing/hiding the navbar links on smaller screens
+    navbarToggle.addEventListener('click', () => {
+        navbarLinks.classList.toggle('show');
+        navbarToggle.classList.toggle('active'); // Toggle the active class for background color
+        body.classList.toggle('content-bg-matched'); // Toggle content background to match navbar
+    });
 });

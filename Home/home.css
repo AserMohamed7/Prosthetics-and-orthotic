@@ -10,192 +10,157 @@ body {
     font-family: "Titillium Web", sans-serif;
 }
 
+/* Navbar Styles */
+/* Navbar Styles */
+/* Base styles */
+/* Navbar styling */
 .navbar {
-    background: -webkit-linear-gradient(left,#013262,#004080,#0059b3, #2288ee);;
+    background: -webkit-linear-gradient(left, #013262, #004080, #0059b3, #2288ee); /* Gradient background */
     height: 90px;
     padding: 10px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    transition: top 0.3s;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between items */
 }
 
-.navbar-logo {
+/* Navbar logo */
+.navbar-logo a {
     font-size: 1.5rem;
-    color: white;
+    color: white; /* Text color */
     font-weight: bold;
+    text-decoration: none;
 }
 
+/* Navbar toggle button */
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: white; /* Ensure the icon is visible */
+    cursor: pointer;
+}
+
+/* Navbar links */
 .navbar-links {
     display: flex;
     list-style: none;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar links when shown on toggle */
+.navbar-links.show {
+    background: -webkit-linear-gradient(left, #013262, #004080, #0059b3, #2288ee); /* Same gradient as navbar */
+    width: 100%; /* Ensure it covers the full width */
+    position: absolute;
+    top: 90px; /* Below the navbar */
+    left: 0;
+    z-index: 99;
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Navbar list items */
 .navbar-links li {
     margin: 0 15px;
 }
 
+/* Navbar link styling */
 .navbar-links a {
-    color: white;
+    color: white; /* Text color */
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s;
+    transition: color 0.3s, padding 0.3s;
+    padding: 10px 15px;
+    text-align: center;
 }
 
+/* Hover effect on navbar links */
 .navbar-links a:hover {
-    color: #659ef6;
-    text-decoration: none;
-    border-left: 0.5px solid white;
-    padding: 6px;
+    color: #659ef6; /* Hover text color */
+    border-left: 0.5px solid white; /* Hover border */
+    padding: 6px; /* Adjusted padding on hover */
 }
 
+/* Active state for navbar links */
 .navbar-links a:active {
-    color: #007bff;
-    text-decoration: none;
+    color: #007bff; /* Active text color */
 }
-.dropbtn {
-    background-color: transparent;
+
+/* Language switcher buttons */
+.language-switcher {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Language switcher button styling */
+.language-switcher button {
+    background-color: #0056b3;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
 }
 
-/* Style the dropdown button */
-.dropdown-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+/* Hover effect for language switcher buttons */
+.language-switcher button:hover {
+    background-color: #004494;
 }
 
-/* Style the dropdown content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0; /* Align dropdown to the right */
-}
-
-/* Style dropdown items */
-.dropdown-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative; /* Ensure the dropdown is positioned relative to this button */
-}
-
-/* Style the dropdown content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 100%; /* Position below the button */
-    left: 0; /* Default alignment */
-    right: auto; /* Default alignment */
-}
-
-/* Adjust the dropdown position based on text direction */
-html[dir="rtl"] .dropdown-content {
-    left: auto; /* Override left alignment */
-    right: 0; /* Align to the right */
-}
-
-/* Style dropdown items */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-/* Style dropdown items on hover */
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show the dropdown content when hovering over the dropdown button */
-.language-switcher:hover .dropdown-content {
-    display: block;
-}
-
-/* Add icons to dropdown items */
-.dropdown-content a::before {
-    content: attr(data-icon);
-    margin-right: 8px;
-}
-
-
-/* Make sure text alignment does not shift layout */
-body.rtl .navbar {
-    direction: rtl; /* Apply RTL direction only to text */
-}
-
-body.ltr .navbar {
-    direction: ltr; /* Apply LTR direction only to text */
-}
-
-/* Add padding or margins if needed to adjust spacing */
-.navbar a {
-    padding: 10px 15px; /* Adjust as necessary */
-    text-align: center; /* Center text within link */
-}
-
-/* Responsive Styles */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 10px 10px;
-        background-color: #032b5c;
-    }
-
-    .navbar-logo {
-        font-size: 1.3rem;
+    .navbar-toggle {
+        display: block; /* Show toggle button on small screens */
     }
 
     .navbar-links {
+        display: none; /* Initially hidden on small screens */
         flex-direction: column;
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #215e9c;
         width: 100%;
-        text-align: center;
+    }
+
+    .navbar-links.show {
+        display: flex; /* Show links when toggled */
+        background: -webkit-linear-gradient(left, #013262, #004080, #0059b3, #2288ee); /* Same gradient as navbar */
     }
 
     .navbar-links li {
-        margin: 10px 0;
+        margin: 0; /* Remove margin for list items */
     }
+
     .navbar-links a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        transition: color 0.3s;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-
-    .navbar-toggle {
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: white;
+        padding: 15px; /* Adjust padding for small screens */
+        border-bottom: 1px solid #004494; /* Add border between items */
     }
 }
+
+/* Active state for toggle button */
+.navbar-toggle.active {
+    padding: 10px;
+}
+
+
+/* Smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+    .navbar-links a {
+        font-size: 1rem; /* Smaller font size */
+        padding: 8px 10px;
+    }
+
+    .navbar-logo a {
+        font-size: 1.2rem; /* Smaller logo font size */
+    }
+
+    .language-switcher button {
+        padding: 8px 10px; /* Smaller padding */
+    }
+}
+
+
 
 @media (min-width: 769px) {
     .navbar-toggle {

@@ -195,23 +195,15 @@ section.company-history-section .section-content p {
     padding-left: 30px; /* Ensure the text aligns well with the checkmark */
 }
 
-.language-switcher {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.language-switcher button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .section-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    section.company-history-section .section-content {
+        flex-direction: column;
     }
 
     section.company-history-section .section-content img {
@@ -252,27 +244,28 @@ section.company-history-section .section-content p {
 }
 
 /* RTL styles */
-[lang="ar"] {
+body[dir="rtl"] {
     direction: rtl;
     text-align: right;
 }
 
-[lang="ar"] .section-content,
-[lang="ar"] .value-item {
+body[dir="rtl"] h1,
+body[dir="rtl"] h2 {
     text-align: right;
 }
 
-[lang="ar"] ul,
-[lang="ar"] p {
-    margin-right: 0;
-    margin-left: auto;
+body[dir="rtl"] .section-content {
+    direction: rtl;
 }
 
-[lang="ar"] .values-section p {
-    padding-left: 20;
+body[dir="rtl"] section.company-history-section .section-content {
+    flex-direction: column-reverse;
 }
 
-[lang="ar"] .section-content img,
-[lang="ar"] .values-section img {
-    margin-left: 0;
+body[dir="rtl"] section.company-history-section .section-content img {
+    order: 2;
+}
+
+body[dir="rtl"] section.company-history-section .section-content p {
+    order: 1;
 }

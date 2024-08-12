@@ -6,7 +6,6 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    direction: ltr; /* Default text direction */
 }
 
 h1, h2 {
@@ -78,7 +77,6 @@ h1, h2 {
 [lang="ar"] .service {
     /* Keep the default layout for RTL, but responsive will handle vertical layout */
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .service {
