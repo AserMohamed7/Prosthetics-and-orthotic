@@ -31,11 +31,17 @@
         <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
         <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
         <li class="language-switcher">
-            <button id="en-button" class="lang-button" data-lang="en">English</button>
-            <button id="ar-button" class="lang-button" data-lang="ar">عربي</button>
+            <button id="dropdown-button" class="dropdown-button">
+                <span id="current-lang">English</span> <span id="lang-icon">🇬🇧</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#" data-lang="en" data-icon="🇬🇧">English</a>
+                <a href="#" data-lang="ar" data-icon="🇲🇦">عربي</a>
+            </div>
         </li>
     </ul>
 </nav>
+
 
 <!-- Carousel and Content -->
 <div class="carousel">
@@ -150,13 +156,13 @@
 </div>
 
 <div class="button-container">
-    <a href="../Services/prosthetics/index.html">
+    <a href="../Services/prosthetics/prosthetics.html">
         <button class="button-57" role="button">
             <span class="text" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</span>
             <span data-en="Know More" data-ar="اعرف المزيد">Know More</span>
         </button>
     </a>
-    <a href="../Services/orthotic/index.html">
+    <a href="../Services/orthotic/orthotic.html">
         <button class="button-57" role="button">
             <span class="text" data-en="Orthotics" data-ar="أجهزة التقويم">Orthotics</span>
             <span data-en="Know More" data-ar="اعرف المزيد">Know More</span>
