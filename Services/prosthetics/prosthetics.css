@@ -6,9 +6,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    direction: ltr; /* Default text direction */
 }
-
 h1, h2 {
     color: #0056b3;
     margin-bottom: 10px;

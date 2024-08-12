@@ -22,28 +22,27 @@
 
 </head>
 <body>
-
-<nav class="navbar">
-    <div class="navbar-logo">
-        <a href="../Home/home.html">Logo</a>
-    </div>
-    <div class="navbar-toggle">
-        <i class="fas fa-bars"></i>
-    </div>
-    <ul class="navbar-links">
-        <li><a href="../Home/home.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
-        <li><a href="../Services/service.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
-        <li><a href="../MeetOurTeam/team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
-        <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
-        <li><a href="../AboutUS/about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
-        <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
-        <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
-        <li class="language-switcher">
-            <button id="en-button" class="lang-button" data-lang="en">English</button>
-            <button id="ar-button" class="lang-button" data-lang="ar">عربي</button>
-        </li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../Home/home.html">Logo</a>
+        </div>
+        <div class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i> <!-- Font Awesome icon for the toggle -->
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="../Home/home.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+            <li><a href="../Services/service.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+            <li><a href="../MeetOurTeam/team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+            <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+            <li><a href="../AboutUS/about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+            <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+            <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
+            <li class="language-switcher">
+                <button id="english-switch" data-lang="en">English</button>
+                <button id="arabic-switch" data-lang="ar">عربي</button>
+            </li>
+        </ul>
+    </nav>
 
 <!--                //End Nav Bar      -->
 
@@ -176,37 +175,48 @@
     <div class="container">
         <div class="row">
             <div class="footer-col">
-                <h4>Pages</h4>
+                <h4 data-en="Pages" data-ar="الصفحات">Pages</h4>
                 <ul>
-                    <li><a href="../Services/index.html">our services</a></li>
-                    <li><a href="../MeetOurTeam/index.html">our team</a></li>
-                    <li><a href="../AboutUS/index.html">about us</a></li>
-                    <li><a href="../ContactUS/contactus.html">contact us</a></li>
-                    <li><a href="../Testimonials/page.html">testimonials</a></li>
-                    <li><a href="../Locations/Location.html">locations</a></li>
+                    <li><a href="../Services/index.html" data-en="Our Services" data-ar="خدماتنا">Our Services</a></li>
+                    <li><a href="../MeetOurTeam/index.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+                    <li><a href="../AboutUS/index.html" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li><a href="../ContactUS/contactus.html" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+                    <li><a href="../Testimonials/page.html" data-en="Testimonials" data-ar="الشهادات">Testimonials</a></li>
+                    <li><a href="../Locations/Location.html" data-en="Locations" data-ar="المواقع">Locations</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Detailed Services</h4>
+                <h4 data-en="Detailed Services" data-ar="الخدمات المفصلة">Detailed Services</h4>
                 <ul>
-                    <li><a href="../Services/index.html">all services</a></li>
-                    <li><a href="../Services/prosthetics/index.html">prosthetics</a></li>
-                    <li><a href="../Services/orthotic/index.html">orthotic</a></li>
-                    <li><a href="#">follow-up care</a></li>
-                    <li><a href="#">consultation and fitting</a></li>
+                    <li><a href="../Services/index.html" data-en="All Services" data-ar="جميع الخدمات">All Services</a></li>
+                    <li><a href="../Services/prosthetics/index.html" data-en="Prosthetics" data-ar="الأطراف الصناعية">Prosthetics</a></li>
+                    <li><a href="../Services/orthotic/index.html" data-en="Orthotics" data-ar="الأجهزة التقويمية">Orthotics</a></li>
+                    <li><a href="#" data-en="Follow-up Care" data-ar="رعاية المتابعة">Follow-up Care</a></li>
+                    <li><a href="#" data-en="Consultation and Fitting" data-ar="الاستشارة والقياس">Consultation and Fitting</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>online shop</h4>
+                <h4 data-en="Online Shop" data-ar="المتجر الإلكتروني">Online Shop</h4>
                 <ul>
-                    <li><a href="#">watch</a></li>
-                    <li><a href="#">bag</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">dress</a></li>
+                    <li><a href="#" data-en="Watch" data-ar="ساعة">Watch</a></li>
+                    <li><a href="#" data-en="Bag" data-ar="حقيبة">Bag</a></li>
+                    <li><a href="#" data-en="Shoes" data-ar="أحذية">Shoes</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>follow us</h4>
+                <h4 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@customcare.com" data-en="info@customcare.com" data-ar="info@customcare.com">info@customcare.com</a></li>
+                    <li><a href="tel:+1234567890" data-en="+123 456 7890" data-ar="+123 456 7890">+123 456 7890</a></li>
+                    <li><a href="#" data-en="123 Main Street, Cairo, Egypt" data-ar="123 الشارع الرئيسي، القاهرة، مصر">123 Main Street, Cairo, Egypt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -216,10 +226,8 @@
             </div>
         </div>
     </div>
-    <div class="line">
-    </div>
     <div class="copyrightsF">
-        <p><span>&#169;</span>All Rights Reserved to Custom Care For A Life You Deserve</p>
+        <p data-en="&#169; All Rights Reserved to Custom Care For A Life You Deserve" data-ar="&#169; جميع الحقوق محفوظة لـ Custom Care لحياة تستحقها">© All Rights Reserved to Custom Care For A Life You Deserve</p>
     </div>
 </footer>
 
