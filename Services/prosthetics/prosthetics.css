@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -5,6 +6,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
+    direction: ltr; /* Default text direction */
 }
 
 h1, h2 {
@@ -17,7 +19,7 @@ h1, h2 {
 
 .service-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
     background-color: #e9f7ff;
@@ -33,23 +35,23 @@ h1, h2 {
 }
 
 .service {
-    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: row; /* Default horizontal layout */
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
-    display: flex;
-    flex-direction: column;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .service img {
-    width: 100%;
+    width: 40%; 
     height: 350px; 
     object-fit: cover; 
 }
@@ -62,9 +64,35 @@ h1, h2 {
 .service-content h2 {
     margin-top: 0;
 }
+
+/* RTL Styles for Arabic Language */
+[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[lang="ar"] .service-section {
+    text-align: right;
+}
+
+[lang="ar"] .service {
+    /* Keep the default layout for RTL, but responsive will handle vertical layout */
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .service {
-        flex: 1 1 100%; 
+        flex-direction: column; /* Stack vertically on smaller screens */
+        width: 100%;
+    }
+
+    .service img {
+        width: 100%;
+        height: auto; /* Adjust height for better scaling */
+    }
+
+    .service-content {
+        padding: 10px; /* Adjust padding for small screens */
     }
 }
 
@@ -83,5 +111,13 @@ h1, h2 {
     
     p {
         font-size: 16px;
+    }
+    
+    .service img {
+        height: auto; /* Ensure images scale properly */
+    }
+
+    .service-content {
+        padding: 10px; /* Consistent padding for small screens */
     }
 }

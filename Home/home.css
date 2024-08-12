@@ -55,6 +55,103 @@ body {
     color: #007bff;
     text-decoration: none;
 }
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the dropdown button */
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Align dropdown to the right */
+}
+
+/* Style dropdown items */
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensure the dropdown is positioned relative to this button */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position below the button */
+    left: 0; /* Default alignment */
+    right: auto; /* Default alignment */
+}
+
+/* Adjust the dropdown position based on text direction */
+html[dir="rtl"] .dropdown-content {
+    left: auto; /* Override left alignment */
+    right: 0; /* Align to the right */
+}
+
+/* Style dropdown items */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Style dropdown items on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.language-switcher:hover .dropdown-content {
+    display: block;
+}
+
+/* Add icons to dropdown items */
+.dropdown-content a::before {
+    content: attr(data-icon);
+    margin-right: 8px;
+}
+
+
+/* Make sure text alignment does not shift layout */
+body.rtl .navbar {
+    direction: rtl; /* Apply RTL direction only to text */
+}
+
+body.ltr .navbar {
+    direction: ltr; /* Apply LTR direction only to text */
+}
+
+/* Add padding or margins if needed to adjust spacing */
+.navbar a {
+    padding: 10px 15px; /* Adjust as necessary */
+    text-align: center; /* Center text within link */
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

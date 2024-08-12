@@ -1,3 +1,4 @@
+/* Default LTR styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -126,11 +127,12 @@ section.company-history-section .section-content p {
     margin-bottom: 30px;
 }
 
+/* Values section */
 .values-section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f4f4f4;
+    background-color: #e9f7ff;
     overflow: hidden; /* Ensure content stays within the section */
 }
 
@@ -159,27 +161,20 @@ section.company-history-section .section-content p {
     transform: scale(1.05);
 }
 
-.values-section ul {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #333;
-}
-
-.values-section ul li {
+.values-section .value-item {
     background-color: #e0f7ff;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    padding-left: 45px;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.values-section ul li:before {
+.values-section .value-item:before {
     content: "\2714";
     color: #0080ff;
     font-size: 18px;
@@ -189,34 +184,15 @@ section.company-history-section .section-content p {
     transform: translateY(-50%);
 }
 
-.values-section ul li:hover {
+.values-section .value-item:hover {
     background-color: #cceeff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* For Arabic (RTL direction) */
-body[lang="ar"] {
-    direction: rtl;
-    text-align: right;
-}
-
-body[lang="ar"] .values-section ul {
-    text-align: right;
-}
-
-body[lang="ar"] .values-section ul li {
-    padding-right: 45px;
-    padding-left: 15px;
-}
-
-body[lang="ar"] .values-section ul li:before {
-    content: "\2714";
-    color: #0080ff;
-    font-size: 18px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+.values-section p {
+    margin: 0;
+    color: #333;
+    padding-left: 30px; /* Ensure the text aligns well with the checkmark */
 }
 
 .language-switcher {
@@ -273,4 +249,30 @@ body[lang="ar"] .values-section ul li:before {
     section.company-history-section .section-content p {
         text-align: justify;
     }
+}
+
+/* RTL styles */
+[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[lang="ar"] .section-content,
+[lang="ar"] .value-item {
+    text-align: right;
+}
+
+[lang="ar"] ul,
+[lang="ar"] p {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[lang="ar"] .values-section p {
+    padding-left: 20;
+}
+
+[lang="ar"] .section-content img,
+[lang="ar"] .values-section img {
+    margin-left: 0;
 }

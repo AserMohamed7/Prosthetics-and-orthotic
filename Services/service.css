@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -5,6 +6,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
+    direction: ltr; /* Default to left-to-right */
 }
 
 h1, h2 {
@@ -12,7 +14,7 @@ h1, h2 {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    text-align: center;
+    text-align: center; /* Center align text */
 }
 
 .service-section {
@@ -25,6 +27,7 @@ h1, h2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
+    direction: ltr; /* Default to left-to-right */
 }
 
 .service-section:hover {
@@ -76,6 +79,7 @@ h1, h2 {
     text-decoration: underline;
     color: #0056b3;
 }
+
 .language-switcher {
     text-align: center;
     margin-bottom: 20px;
@@ -95,13 +99,30 @@ h1, h2 {
     background-color: #004494;
 }
 
+/* RTL adjustments */
 [lang="ar"] {
     direction: rtl; /* Right-to-left for Arabic */
 }
 
 [lang="ar"] .service-section {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row; /* Use row layout in RTL */
+    gap: 20px; /* Maintain gap between items */
 }
+
+[lang="ar"] .service {
+    direction: rtl; /* Ensure direction for service cards */
+}
+
+/* Ensure text alignment and layout in RTL */
+[lang="ar"] h1, [lang="ar"] h2{
+    text-align: center; /* Center align text in RTL mode */
+}
+[lang="ar"] p
+{
+    text-align: right;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .service {
         flex: 1 1 100%;
