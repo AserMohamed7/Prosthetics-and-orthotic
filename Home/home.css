@@ -37,7 +37,7 @@ body {
 }
 
 .navbar-logo img {
-    max-height: 40px; /* Set the maximum height of the logo */
+    max-height: 80px; /* Set the maximum height of the logo */
     width: auto; /* Maintain aspect ratio */
 }
 
