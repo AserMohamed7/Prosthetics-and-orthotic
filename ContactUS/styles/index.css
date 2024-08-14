@@ -3875,7 +3875,7 @@
       .ftco-counter .text span {
         text-transform: uppercase;
         font-weight: 600;
-        color: rgba(0, 0, 0, 0.7); }
+        color: rgba(255, 255, 255, 0.7); }
     @media (max-width: 767.98px) {
       .ftco-counter .counter-wrap {
         margin-bottom: 20px; } }
@@ -4114,7 +4114,6 @@
         font-family: Arial, sans-serif;
         line-height: 1.6;
         margin: 0;
-        padding: 20px;
         background-color: #f4f4f4;
         color: #333;
     }
@@ -4209,6 +4208,7 @@
       display: block;
       font-weight: 700;
       color:#019f6c;
+      text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
