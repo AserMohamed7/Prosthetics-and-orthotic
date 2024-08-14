@@ -17,6 +17,46 @@ h1, h2 {
 
 .service-section {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    display: none; /* Hide all services by default */
+    width: 48%; /* Adjust this based on your layout */
+    margin-bottom: 20px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.pagination button {
+    background-color: #043483;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #0a409c;
+}
+
+.pagination span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+
+.service-section {
+    display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;

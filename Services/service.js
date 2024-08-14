@@ -53,3 +53,42 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('content-bg-matched'); // Toggle content background to match navbar
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const servicesPerPage = 4;
+    const services = document.querySelectorAll('.service');
+    const totalPages = Math.ceil(services.length / servicesPerPage);
+    let currentPage = 1;
+
+    function showPage(page) {
+        const start = (page - 1) * servicesPerPage;
+        const end = start + servicesPerPage;
+
+        services.forEach((service, index) => {
+            if (index >= start && index < end) {
+                service.style.display = "block";
+            } else {
+                service.style.display = "none";
+            }
+        });
+
+        document.getElementById('page-num').textContent = `Page ${page} of ${totalPages}`;
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
+
+    // Initialize the first page
+    showPage(currentPage);
+});
