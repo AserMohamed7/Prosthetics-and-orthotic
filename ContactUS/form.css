@@ -130,7 +130,7 @@
     margin-left: 0px;
     max-width: 420px;
     font-size: 18px;
-    color: #b6b6b6;
+    color: #1f2b7f;
 }
 
 .landing_page .text-blk.section-head {
@@ -142,6 +142,7 @@
     margin-bottom: 15px;
     margin-left: 0px;
     max-width: 450px;
+    color: #0b2e51;
 }
 
 .landing_page .icons-container {
@@ -240,27 +241,46 @@
 }
 
 /* RTL Styles */
-html[dir="rtl"] .landing_page .form-box {
+[lang="ar"] .landing_page .form-box {
     padding-right: 33px;
     padding-left: 33px; /* Switch padding for RTL */
 }
 
-html[dir="rtl"] .landing_page .input {
+[lang="ar"] .landing_page .input {
     padding-right: 125px; /* Adjust padding for RTL */
     padding-left: 22.5px; /* Adjust padding for RTL */
     text-align: right; /* Ensure text is right-aligned */
 }
 
-html[dir="rtl"] .landing_page .textinput {
+[lang="ar"] .landing_page .textinput {
     padding-left: 22px; /* Adjust padding for RTL */
     padding-right: 22px; /* Adjust padding for RTL */
     text-align: right; /* Ensure text is right-aligned */
 }
 
-html[dir="rtl"] .landing_page .submit-btn {
+[lang="ar"] .landing_page .submit-btn {
     /* No change needed for button in RTL */
 }
-
+[lang="ar"].landing_page.text-blk.section-subhead
+{
+    text-align: right;
+}
+[lang="ar"].landing_page.text-blk.section-head
+{
+    text-align: right;
+}
+[lang="ar"] p 
+{
+    text-align: right;
+}
+.copyrightsF p {
+   
+    text-align: center; /* Center align the text */
+}
+[lang="ar"] .responsive-container-block label
+{
+    text-align: right;
+}
 *,
 *:before,
 *:after {

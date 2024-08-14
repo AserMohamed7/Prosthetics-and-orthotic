@@ -77,6 +77,11 @@ h1, h2 {
 [lang="ar"] .service {
     /* Keep the default layout for RTL, but responsive will handle vertical layout */
 }
+[lang="ar"] .container > h1 
+{
+    text-align: center;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .service {

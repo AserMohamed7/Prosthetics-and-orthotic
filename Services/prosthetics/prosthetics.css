@@ -95,9 +95,9 @@ h1, h2 {
 
 
 /* RTL Styles for Arabic Language */
-[lang="ar"] {
-    direction: rtl;
-    text-align: right;
+[lang="ar"] .container > h1 
+{
+    text-align: center;
 }
 
 [lang="ar"] .service-section {
