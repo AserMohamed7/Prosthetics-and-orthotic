@@ -50,8 +50,8 @@ h1, h2 {
 }
 
 .service img {
-    width: 40%; 
-    height: 350px; 
+    max-width: 40%;
+    max-height: 250px;
     object-fit: cover; 
 }
 
@@ -85,6 +85,7 @@ h1, h2 {
     }
 
     .service img {
+        margin-left: 30%;
         width: 100%;
         height: auto; /* Adjust height for better scaling */
     }
@@ -112,6 +113,7 @@ h1, h2 {
     }
     
     .service img {
+        margin-left: 30%;
         height: auto; /* Ensure images scale properly */
     }
 
