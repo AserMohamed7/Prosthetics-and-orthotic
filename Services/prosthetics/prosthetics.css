@@ -7,6 +7,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
 h1, h2 {
     color: #0056b3;
     margin-bottom: 10px;
@@ -14,46 +15,6 @@ h1, h2 {
     letter-spacing: 1.5px;
     text-align: center;
 }
-
-.service-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.service {
-    display: none; /* Hide all services by default */
-    width: 48%; /* Adjust this based on your layout */
-    margin-bottom: 20px;
-}
-
-.pagination {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-.pagination button {
-    background-color: #043483;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 0 5px;
-}
-
-.pagination button:hover {
-    background-color: #0a409c;
-}
-
-.pagination span {
-    margin: 0 10px;
-    font-size: 18px;
-}
-
 
 .service-section {
     display: flex;
@@ -84,14 +45,15 @@ h1, h2 {
 }
 
 .service:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service img {
-    width: 40%; 
-    height: 350px; 
-    object-fit: cover; 
+    align-content: center;
+    max-width: 40%;
+    max-height: 250px;
+    object-fit: cover;
 }
 
 .service-content {
@@ -102,6 +64,35 @@ h1, h2 {
 .service-content h2 {
     margin-top: 0;
 }
+
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.pagination button {
+    background-color: #043483;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #0a409c;
+}
+
+.pagination span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
 
 /* RTL Styles for Arabic Language */
 [lang="ar"] {
@@ -116,7 +107,6 @@ h1, h2 {
 [lang="ar"] .service {
     /* Keep the default layout for RTL, but responsive will handle vertical layout */
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .service {
@@ -125,6 +115,7 @@ h1, h2 {
     }
 
     .service img {
+        margin-left: 30%;
         width: 100%;
         height: auto; /* Adjust height for better scaling */
     }
@@ -138,19 +129,19 @@ h1, h2 {
     body {
         padding: 10px;
     }
-    
+
     h1 {
         font-size: 24px;
     }
-    
+
     h2 {
         font-size: 20px;
     }
-    
+
     p {
         font-size: 16px;
     }
-    
+
     .service img {
         height: auto; /* Ensure images scale properly */
     }
@@ -159,3 +150,4 @@ h1, h2 {
         padding: 10px; /* Consistent padding for small screens */
     }
 }
+
