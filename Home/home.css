@@ -7,7 +7,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Titillium Web", sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+
 }
 
 /* Navbar Styles */
@@ -27,13 +28,19 @@ body {
     justify-content: space-between; /* Space between items */
 }
 
-/* Navbar logo */
 .navbar-logo a {
-    font-size: 1.5rem;
-    color: white; /* Text color */
-    font-weight: bold;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensures the logo is vertically centered */
+
 }
+
+.navbar-logo img {
+    max-height: 40px; /* Set the maximum height of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
 
 /* Navbar toggle button */
 .navbar-toggle {
@@ -72,7 +79,8 @@ body {
     color: white; /* Text color */
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s, padding 0.3s;
+    transition: all 0.5s ease;
+    /*transition: color 0.3s, padding 0.3s;*/
     padding: 10px 15px;
     text-align: center;
 }
@@ -609,6 +617,7 @@ body {
     border-right: 0.15em solid white; /* Blinking cursor effect */
     animation: typing 9s steps(50, end), blink-caret 0.75s step-end infinite;
 }
+
 .certificates .text_container2 h2 {
     font-size: 36px;
     line-height: 1.5;
