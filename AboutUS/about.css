@@ -244,28 +244,55 @@ section.company-history-section .section-content p {
 }
 
 /* RTL styles */
-body[dir="rtl"] {
-    direction: rtl;
+
+
+[lang="ar"] h1,
+[lang="ar"] h2 {
+    text-align: center;
+}
+
+[lang="ar"] .container > p {
     text-align: right;
 }
-
-body[dir="rtl"] h1,
-body[dir="rtl"] h2 {
-    text-align: right;
+[lang="ar"] .container > h1 {
+    text-align: center;
 }
-
-body[dir="rtl"] .section-content {
+[lang="ar"].section-content {
     direction: rtl;
 }
+[lang="ar"].body > h1 {
+    text-align: center;
+}
+[lang="ar"]#page-title
+{
+    text-align: center;
+}
 
-body[dir="rtl"] section.company-history-section .section-content {
+
+
+
+[lang="ar"]section.company-history-section .section-content {
     flex-direction: column-reverse;
 }
 
-body[dir="rtl"] section.company-history-section .section-content img {
+[lang="ar"]section.company-history-section .section-content img {
     order: 2;
 }
 
-body[dir="rtl"] section.company-history-section .section-content p {
+[lang="ar"] section.company-history-section .section-content p {
     order: 1;
+    text-align: right;
 }
+[lang="ar"] section.mission-section .section-content p {
+    order: 1;
+    text-align: right;
+}
+[lang="ar"] section.vision-section .section-content p {
+    order: 1;
+    text-align: right;
+}
+[lang="ar"] section.values-section .section-content p {
+    order: 1;
+    text-align: right;
+}
+

@@ -65,6 +65,9 @@ h1, h2 {
     margin-top: 5px; /* Reduced margin */
     font-size: 16px; /* Adjust font size */
 }
+[lang="ar"] .container > h1 {
+    text-align: center;
+}
 
 /* Ensure responsiveness */
 @media (max-width: 992px) {

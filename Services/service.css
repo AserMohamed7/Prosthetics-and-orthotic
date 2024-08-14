@@ -105,7 +105,7 @@ h1, h2 {
 
 [lang="ar"] .service-section {
     flex-direction: row; /* Use row layout in RTL */
-    gap: 20px; /* Maintain gap between items */
+    gap: 20px;
 }
 
 [lang="ar"] .service {
@@ -116,11 +116,18 @@ h1, h2 {
 [lang="ar"] h1, [lang="ar"] h2{
     text-align: center; /* Center align text in RTL mode */
 }
-[lang="ar"] p
+[lang="ar"] .container > p 
 {
     text-align: right;
 }
 
+[lang="ar"] .container > h1 {
+    text-align: center;
+}
+
+[lang="ar"] .service-content > p {
+    text-align: right;
+}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .service {
