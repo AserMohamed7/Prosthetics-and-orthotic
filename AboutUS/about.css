@@ -136,6 +136,12 @@ section.company-history-section .section-content p {
     overflow: hidden; /* Ensure content stays within the section */
 }
 
+.value-item strong {
+    font-weight: bold;
+    display: block; /* If you want the title on its own line */
+    margin-bottom: 5px; /* Adds a bit of space between the title and the paragraph */
+}
+
 .values-section h2 {
     text-align: center;
     color: #004080;
