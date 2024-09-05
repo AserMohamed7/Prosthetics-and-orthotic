@@ -20,3 +20,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('language') || 'en';
     setLanguage(savedLang);
 });
+
+// document.addEventListener('DOMContentLoaded' , function MakeItBold(){
+//     const elements = document.querySelectorAll("[data-en]");
+//     elements.forEach(element =>{
+//         const Encontent = element.getAttribute('data-en');
+//         const Arcontent = element.getAttribute('data-ar');
+//         const  chosenContent = Encontent;
+//
+//         const precontent = Encontent.split(':')
+//         if(precontent>1){
+//             element.innerHTML = `<strong>${precontent[0]}:</strong>${precontent[1]}`;
+//         }
+//         else {
+//             element.textContent = Encontent;
+//         }
+//
+//     });
+// } )
+
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.getElementById('lang-container');
+
+    elements.forEach(element => {
+        // Get the content from the data attribute
+        const contentEn = element.getAttribute('data-en');
+        const contentAr = element.getAttribute('data-ar');
+
+        // Choose the language here (for example 'en' or 'ar')
+        const chosenContent = contentEn; // Switch to contentAr for Arabic
+
+        // Split the content into the part you want bold
+        const parts = chosenContent.split(":");
+        if (parts.length > 1) {
+            // Set the inner HTML with the first part bold
+            element.innerHTML = `<strong>${parts[0]}:</strong> ${parts[1]}`;
+        } else {
+            // If there's no colon, just set the full text
+            element.textContent = chosenContent;
+        }
+    });
+});
