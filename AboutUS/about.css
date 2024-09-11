@@ -293,7 +293,7 @@ section.company-history-section .section-content p {
 }
 [lang="ar"] section.mission-section .section-content p {
     order: 1;
-    text-align: right;
+    text-align: right ;
 }
 [lang="ar"] section.vision-section .section-content p {
     order: 1;
