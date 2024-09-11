@@ -135,7 +135,9 @@ section.company-history-section .section-content p {
     background-color: #e9f7ff;
     overflow: hidden; /* Ensure content stays within the section */
 }
-
+.value-title {
+    font-weight: bold;
+}
 .value-item strong {
     font-weight: bold;
     display: block; /* If you want the title on its own line */
@@ -291,7 +293,7 @@ section.company-history-section .section-content p {
 }
 [lang="ar"] section.mission-section .section-content p {
     order: 1;
-    text-align: right;
+    text-align: right ;
 }
 [lang="ar"] section.vision-section .section-content p {
     order: 1;

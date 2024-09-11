@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const enButton = document.getElementById('en-button');
     const arButton = document.getElementById('ar-button');
     
+    
     function setLanguage(lang) {
         localStorage.setItem('language', lang);
         
